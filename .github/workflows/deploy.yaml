@@ -32,8 +32,9 @@ jobs:
     - name: Install Dependencies
       run: |
         npm install
-        node --version
+        npm install -g vite
         npm install vite --save-dev
+        node --version
         npm ci --production
 
 
