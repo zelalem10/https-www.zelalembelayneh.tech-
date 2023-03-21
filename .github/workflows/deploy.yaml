@@ -37,26 +37,6 @@ jobs:
     - name: Build Static Website
       run: npm run build
 
-    - name: Setup Pages
-      uses: actions/configure-pages@v2
-    - name: Upload artifact
-      uses: actions/upload-pages-artifact@v1
-      with:
-        # Upload dist repository
-        path: './dist'
-
-    - name: Upload production-ready build files
-      uses: actions/upload-artifact@v3
-      with:
-        name: production-files
-        path: ./dist
-
-    - name: Download artifact
-      uses: actions/download-artifact@v3
-      with:
-        name: production-files
-        path: ./dist
-
     - name: Copy files to the production website with the AWS CLI
       run: |
         aws s3 sync --delete ${{ env.DIST }} s3://${{ env.BUCKET }}
