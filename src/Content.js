@@ -14,10 +14,10 @@ import js from "./assets/images/Skills/JS.png";
 import services_logo1 from "./assets/images/Services/logo1.png";
 
 
-import Booking from "./assets/images/projects/ET-Booking.jpg";
-import shebamiles from "./assets/images/projects/shebamiles.jpg";
-import ethiopianpassport from "./assets/images/projects/ethiopianpassport.PNG";
-import person_project from "./assets/images/projects/person.png";
+import Booking from "./assets/images/Projects/ET-Booking.jpg";
+import shebamiles from "./assets/images/Projects/shebamiles.jpg";
+import ethiopianpassport from "./assets/images/Projects/ethiopianpassport.PNG";
+import person_project from "./assets/images/Projects/person.png";
 
 import Michael from "./assets/images/Testimonials/Michael.jpg";
 import Digafe from "./assets/images/Testimonials/dgafe.jpg";
