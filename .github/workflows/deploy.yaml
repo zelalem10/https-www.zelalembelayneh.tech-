@@ -37,9 +37,18 @@ jobs:
         node --version
         npm ci --production
 
+    - name: Install dependencies
+      uses: bahmutov/npm-install@v1
+
 
     - name: Build Static Website
       run: npm run build
+
+    - name: Upload production-ready build files
+      uses: actions/upload-artifact@v3
+      with:
+        name: production-files
+        path: ./dist
 
     - name: Copy files to the production website with the AWS CLI
       run: |
