@@ -33,7 +33,9 @@ jobs:
       run: |
         npm install
         node --version
+        npm install vite --save-dev
         npm ci --production
+
 
     - name: Build Static Website
       run: npm run build
