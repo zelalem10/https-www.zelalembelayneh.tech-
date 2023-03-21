@@ -27,22 +27,22 @@ jobs:
     - name: Set up Node.js environment
       uses: actions/setup-node@v2
       with:
-        node-version: '18'
+        node-version: '16'
 
     - name: Install Dependencies
       run: |
         npm install
-        npm install -g vite
-        npm install vite --save-dev
-        node --version
-        npm ci --production
-
-    - name: Install dependencies
-      uses: bahmutov/npm-install@v1
-
 
     - name: Build Static Website
       run: npm run build
+
+    - name: Setup Pages
+      uses: actions/configure-pages@v2
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v1
+      with:
+        # Upload dist repository
+        path: './dist'
 
     - name: Upload production-ready build files
       uses: actions/upload-artifact@v3
