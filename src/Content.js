@@ -9,7 +9,7 @@ import nodejs from "./assets/images/Skills/node.png";
 import mySQL from "./assets/images/Skills/mySql.png";
 import html from "./assets/images/Skills/HTML.png";
 import css from "./assets/images/Skills/CSS3.png";
-import js from "./assets/images/Skills/js.png";
+import js from "./assets/images/Skills/JS.png";
 
 import services_logo1 from "./assets/images/Services/logo1.png";
 
