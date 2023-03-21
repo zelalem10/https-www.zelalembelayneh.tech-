@@ -1,7 +1,7 @@
 // import images
 import Hero_person from "./assets/images/Hero/person.png";
 
-import java from "./assets/images/Skills/Java.png";
+import java from "./assets/images/Skills/java.png";
 import aws from "./assets/images/Skills/aws.png";
 import Spring from "./assets/images/Skills/Spring.png";
 import reactjs from "./assets/images/Skills/react.png";
