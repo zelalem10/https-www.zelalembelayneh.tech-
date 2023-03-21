@@ -50,19 +50,17 @@ jobs:
         name: production-files
         path: ./dist
 
-  deploy:
-    steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v3
-        with:
-          name: production-files
-          path: ./dist
+    - name: Download artifact
+      uses: actions/download-artifact@v3
+      with:
+        name: production-files
+        path: ./dist
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./dist
 
     - name: Copy files to the production website with the AWS CLI
       run: |
