@@ -1,28 +1,10 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
-
+---
+name: Build and Deploy React App to CloudFront
 on:
-  # Runs on pushes targeting the default branch
   push:
-    branches: ['main']
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# Sets the GITHUB_TOKEN permissions to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-# Allow one concurrent deployment
-concurrency:
-  group: 'pages'
-  cancel-in-progress: true
-
+    branches: [ main ]
 jobs:
-  # Single deploy job since we're just deploying
-  deploy:
+  build-and-deploy:
     name: Build and Deploy
     runs-on: ubuntu-latest
     env:
@@ -30,10 +12,16 @@ jobs:
       DIST: dist
       REGION: us-east-1
       DIST_ID: E1OCQFUWXZ5W0Y
-    runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.REGION }}
       - name: Set up Node
         uses: actions/setup-node@v3
         with:
@@ -54,12 +42,19 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v1
 
-      - name: Copy files to the production website with the AWS CLI
-        run: |
-          aws s3 sync --delete ${{ env.DIST }} s3://${{ env.BUCKET }}
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: ${{ env.REGION }}
 
-      - name: Copy files to the production website with the AWS CLI
-        run: |
-          aws cloudfront create-invalidation \
-            --distribution-id ${{ env.DIST_ID }} \
-            --paths "/*"
+    - name: Copy files to the production website with the AWS CLI
+      run: |
+        aws s3 sync --delete ${{ env.DIST }} s3://${{ env.BUCKET }}
+
+    - name: Copy files to the production website with the AWS CLI
+      run: |
+        aws cloudfront create-invalidation \
+          --distribution-id ${{ env.DIST_ID }} \
+          --paths "/*"
