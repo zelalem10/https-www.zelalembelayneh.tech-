@@ -16,7 +16,7 @@ import services_logo1 from "./assets/images/Services/logo1.png";
 
 import Booking from "./assets/images/Projects/ET-Booking.jpg";
 import shebamiles from "./assets/images/Projects/shebamiles.jpg";
-import ethiopianpassport from "./assets/images/Projects/ethiopianpassport.PNG";
+import ethiopianpassport from "./assets/images/Projects/ET-Booking.jpg";
 import person_project from "./assets/images/Projects/person.png";
 
 import Michael from "./assets/images/Testimonials/Michael.jpg";
