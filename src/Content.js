@@ -59,7 +59,7 @@ export const content = {
   ],
   hero: {
     title: "Software Engineer",
-    firstName: "Zelalem",
+    firstName: "Zelalemmm",
     LastName: "Tsige",
     btnText: "Hire Me",
     image: Hero_person,
@@ -225,6 +225,6 @@ export const content = {
     ],
   },
   Footer: {
-    text: "All © Copy Right Reserved 2024",
+    text: "All © Copy Right Reserved 2023",
   },
 };
