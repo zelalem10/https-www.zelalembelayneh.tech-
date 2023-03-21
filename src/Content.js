@@ -6,7 +6,7 @@ import aws from "./assets/images/Skills/aws.png";
 import Spring from "./assets/images/Skills/Spring.png";
 import reactjs from "./assets/images/Skills/react.png";
 import nodejs from "./assets/images/Skills/node.png";
-import mySQL from "./assets/images/Skills/mySQL.png";
+import mySQL from "./assets/images/Skills/mySql.png";
 import html from "./assets/images/Skills/HTML.png";
 import css from "./assets/images/Skills/CSS3.png";
 import js from "./assets/images/Skills/js.png";
@@ -16,7 +16,7 @@ import services_logo1 from "./assets/images/Services/logo1.png";
 
 import Booking from "./assets/images/projects/ET-Booking.jpg";
 import shebamiles from "./assets/images/projects/shebamiles.jpg";
-import ethiopianpassport from "./assets/images/projects/ethiopianpassport.png";
+import ethiopianpassport from "./assets/images/projects/ethiopianpassport.PNG";
 import person_project from "./assets/images/projects/person.png";
 
 import Michael from "./assets/images/Testimonials/Michael.jpg";
