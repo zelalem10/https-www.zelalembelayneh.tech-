@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       BUCKET: www.zelalembelayneh.tech
-      DIST: dist
+      DIST: build
       REGION: us-east-1
       DIST_ID: E1OCQFUWXZ5W0Y
 
