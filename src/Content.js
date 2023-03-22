@@ -80,50 +80,41 @@ export const content = {
     skills_content: [
       {
         name: "Java",
-        para: "Lorem ipsum text  dummy",
         logo: java,
       },
     
       {
         name: "Spring Framworks",
-        para: "Lorem ipsum text  dummy",
         logo: Spring,
       },
       {
         name: "React js",
-        para: "Lorem ipsum text  dummy",
         logo: reactjs,
       },
       {
         name: "HTML5",
-        para: "Lorem ipsum text  dummy",
         logo: html,
       },
 
       {
         name: "CSS3",
-        para: "Lorem ipsum text  dummy",
         logo: css,
       },
       {
         name: "JavaScript",
-        para: "Lorem ipsum text  dummy",
         logo: js,
       },
       {
         name: "Node js",
-        para: "Lorem ipsum text  dummy",
         logo: nodejs,
       },
 
       {
         name: "AWS",
-        para: "Lorem ipsum text  dummy",
         logo: aws,
       },
       {
         name: "mySQL",
-        para: "Lorem ipsum text  dummy",
         logo: mySQL,
       },
     ],
@@ -135,17 +126,17 @@ export const content = {
     service_content: [
       {
         title: "Frontend ReactJs Developer",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
+        para: "focused on developing user interfaces using the React JavaScript library. I possess expertise in developing custom components, implementing responsive design, creating interactive user interfaces. I have been working on single-page web applications that are highly dynamic and interactive, providing seamless user experiences.",
         logo: services_logo1,
       },
       {
         title: "Java Backend Developer",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
+        para: "responsible for developing the server-side of software applications using Java and related technologies. I work with both SQL and NoSQL databases, APIs, web servers, and other systems to ensure that software applications are efficient, scalable, and secure.",
         logo: services_logo1,
       },
       {
         title: "Full Stack Developer",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
+        para: "responsible for designing, developing, and maintaining software applications that operate on both the front-end and back-end of a system. This involves managing databases, servers, and clients, as well as creating intuitive user interfaces and ensuring seamless user experiences. I have a good understanding of software architecture, testing methodologies, and version control systems.",
         logo: services_logo1,
       },
     ],

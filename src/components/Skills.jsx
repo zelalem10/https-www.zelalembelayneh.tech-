@@ -48,16 +48,10 @@ const Skills = () => {
         </div>
         <br />
         <ul className="list-decimal px-4 font-Poppins sm:text-sm text-xs !leading-7">
-          <li>Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
-          <li>Lorem ipsum dolor sit, ame.</li>
-          <li>Lorem ipsum dolor sit, amet consectetur</li>
-          <li>
-            Lorem ipsum dolor sit, amet dolor sit, amet consectetur adipisicing.
-          </li>
-          <li>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad est
-            beatae quos rem.
-          </li>
+
+          <p>
+          As an experienced developer, I possess a thorough understanding of <strong>{selectSkill?.name}</strong>. My expertise has been honed through years of practical experience developing a wide range of software solutions. I have a proven track record of success, having designed and implemented Java-based applications that are both efficient and effective. I am confident in my ability to solve complex problems and deliver high-quality results, making me an ideal candidate for any Java-based project
+          </p>
         </ul>
         <br />
         <div className="flex justify-end">
