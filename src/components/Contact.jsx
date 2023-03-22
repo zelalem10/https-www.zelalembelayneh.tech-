@@ -3,6 +3,7 @@ import { content } from "../Content";
 import emailjs from "@emailjs/browser";
 import toast, { Toaster } from "react-hot-toast";
 import axios from "axios";
+import blog from "../assets/images/Projects/CICD.jpg";
 const Contact = () => {
   const { Contact } = content;
   let [name, setName] = useState("");
@@ -179,7 +180,7 @@ const Contact = () => {
           <div className="flex-1 flex flex-col gap-5">
               <div>
           <a href="https://medium.com/@zelalembelayneh96/deploying-a-react-app-or-any-static-website-to-amazon-s3-and-cloudfront-using-a-ci-cd-pipeline-87b90294e437" target="_blank" rel="noreferrer" className="mb-5">
-            <img src="/src/assets/images/Projects/CICD.jpg" alt="Blog"></img>
+            <img src={blog} alt="Blog"></img>
           </a>
           </div>
           <a href="https://medium.com/@zelalembelayneh96/deploying-a-react-app-or-any-static-website-to-amazon-s3-and-cloudfront-using-a-ci-cd-pipeline-87b90294e437"
