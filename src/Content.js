@@ -174,7 +174,7 @@ export const content = {
   },
   Testimonials: {
     title: "Testimonials",
-    subtitle: "RECOMMENDATIONS",
+    subtitle: "Colleague Testimonials",
     testimonials_content: [
       {
         review:
